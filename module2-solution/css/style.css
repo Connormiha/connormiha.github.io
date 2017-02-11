@@ -36,7 +36,9 @@ body {
 }
 
 .wrapper {
-    margin: 0 3rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 90%;
 }
 
 .title {
@@ -48,10 +50,12 @@ body {
     display: -webkit-flex;
     display: -moz-flex;
     display: flex;
+
     -ms-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+
     -ms-justify-content: space-between;
     -webkit-justify-content: space-between;
     -moz-justify-content: space-between;
@@ -88,6 +92,10 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .wrapper {
+        max-width: none;
+    }
+
     .menu__item:first-child, .menu__item:nth-child(2) {
         width: -moz-calc(50% - 0.5rem);
         width: -webkit-calc(50% - 0.5rem);
@@ -96,6 +104,10 @@ body {
 }
 
 @media (min-width: 992px) {
+    .wrapper {
+        max-width: none;
+    }
+
     .menu__item {
         margin-top: 0;
         width: -moz-calc(100% / 3 - 0.5rem);
